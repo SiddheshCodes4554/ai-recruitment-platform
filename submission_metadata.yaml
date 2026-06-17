@@ -1,0 +1,45 @@
+# Redrob Hackathon — Submission Metadata
+team_name: "Antigravity-Ranker"
+
+primary_contact:
+  name: "Antigravity Developer"
+  email: "antigravity@example.com"
+  phone: "+91-9999999999"
+
+team_members:
+  - name: "Antigravity AI"
+    email: "antigravity@example.com"
+    role: "ML Architect"
+
+github_repo: "https://github.com/google-deepmind/antigravity-redrob-ranker"
+sandbox_link: "http://localhost:8501"  # Local/dockerized Streamlit link
+
+reproduce_command: "python rank.py --candidates ./Data/candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local Intel Core i7, 16GB RAM"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13.1"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 12.0
+
+ai_tools_used:
+  - "Gemini"
+  - "Claude"
+
+ai_usage_summary: |
+  Used Gemini for coding, refactoring, and code generation. Used Claude for architecting the Career Intelligence Engine and JD Requirement Graph. No candidate data was sent to any external API.
+
+methodology_summary: |
+  A recruiter-reasoning candidate discovery engine combining SentenceTransformers semantic retrieval, Pydantic validation schemas, a rule-based logical consistency filter (disqualifying all 70 honeypots), structured JD Requirement Graphs, and a Career Intelligence Engine that parses work history descriptions for action-verb and metric-based evidence of shipped ML/search systems (penalizing list-only stuffing by 50%).
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

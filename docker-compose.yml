@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ranking-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: redrob-ranking-system
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    volumes:
+      # Mount Data folder to persist generated indexes and output files
+      - ./Data:/app/Data
+    environment:
+      - USE_TF=0
+      - USE_TORCH=1
+    restart: unless-stopped
