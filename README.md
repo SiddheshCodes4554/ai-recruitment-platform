@@ -23,7 +23,7 @@ A production-grade, recruiter-centric candidate ranking and retrieval system des
 
 The system utilizes a split **Offline Pre-computation** and **Online Real-time Search** architecture to meet strict low-latency requirements.
 
-[diagram-export-6-18-2026-6-32-38-PM.png](https://postimg.cc/4KthvZkc)
+[![diagram-export-6-18-2026-6-32-38-PM.png](https://i.postimg.cc/YSDfHqdd/diagram-export-6-18-2026-6-32-38-PM.png)](https://postimg.cc/4KthvZkc)
 
 ## 🎯 Multi-Stage Recruiter Scoring
 
